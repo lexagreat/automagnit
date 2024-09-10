@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Главная",
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="why-section">
+            <div class="container">
+               <div class="why-section__wrapper">
+                  <h2 class="why-section__title title">Почему <span>выбирают нас</span></h2>
+                  <div class="why-section__main">
+                     <div class="why-section__image">
+                        <img src="img/why.png" alt="">
+                     </div>
+                     <ul class="why-section__list">
+                        <li>
+                           <span class="why-section__index">01</span>
+                           <div class="why-section__content">
+                              <h4>ПРЕДЛАГАЕМ ВЫСОКУЮ ЦЕНУ </h4>
+                              <p>оценка формируется на основе реального состояния авто и рыночной стоимости auto.ru,
+                                 avito.</p>
+                           </div>
+                        </li>
+                        <li>
+                           <span class="why-section__index">02</span>
+                           <div class="why-section__content">
+                              <h4>БЕСПЛАТНЫЙ ВЫЕЗД</h4>
+                              <p>в течение часа приедем к вам и бесплатно осмотрим авто и определим точную стоимость.
+                              </p>
+                           </div>
+                        </li>
+                        <li>
+                           <span class="why-section__index">03</span>
+                           <div class="why-section__content">
+                              <h4>ДЕНЬГИ ВЫПЛАЧИВАЕМ СРАЗУ</h4>
+                              <p>оплату проводим наличными либо на карту сразу после подписания договора.</p>
+                           </div>
+                        </li>
+                        <li>
+                           <span class="why-section__index">04</span>
+                           <div class="why-section__content">
+                              <h4>ГАРАНТИРУЕМ ЮРИДИЧЕСКУЮ ЧИСТОТУ</h4>
+                              <p>быстро и грамотно составим необходимые документы для подтверждения сделки.</p>
+                           </div>
+                        </li>
+                        <li>
+                           <span class="why-section__index">05</span>
+                           <div class="why-section__content">
+                              <h4>ЗАЩИТИМ ОТ МОШЕННИЧЕСКИХ СХЕМ</h4>
+                              <p>Не позволим вам лишиться своего автомобиля.</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="youtube-section">
+            <div class="container">
+               <div class="youtube-section__wrapper">
+                  <h2 class="youtube-section__title title">
+                     Мы на <span>youtube</span>
+                  </h2>
+                  <div class="youtube-section__main">
+                     <div class="swiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

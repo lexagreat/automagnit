@@ -1,0 +1,122 @@
+// .wrapper {
+//    background-color: red;
+// }
+.why-section {
+   // .why-section__wrapper
+   margin-bottom: 120px;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 54px;
+      position: relative;
+   }
+
+   // .why-section__title
+
+   &__title {
+      position: relative;
+      z-index: 1;
+   }
+
+   // .why-section__main
+
+   &__main {
+   }
+
+   // .why-section__image
+
+   &__image {
+      top: 0;
+      left: -400px;
+      position: absolute;
+      pointer-events: none;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   // .why-section__list
+
+   &__list {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 450px;
+      column-gap: 40px;
+      row-gap: 15px;
+      li {
+         display: flex;
+         gap: 12px;
+      }
+   }
+
+   // .why-section__index
+
+   &__index {
+      width: 28px;
+      flex: 0 0 28px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      border: 1px solid;
+      color: rgba(219, 55, 39, 1);
+      font-family: "Gilroy";
+      font-size: 15px;
+   }
+
+   // .why-section__content
+
+   &__content {
+      font-family: "Gilroy";
+      h4 {
+         font-size: 25px;
+         font-weight: 600;
+         line-height: calc(30 / 25);
+         background: linear-gradient(90deg, #141414 0%, #4c4c4c 100%);
+         color: transparent;
+         background-clip: text;
+      }
+      p {
+         font-size: 18px;
+         font-weight: 300;
+         line-height: calc(21 / 18);
+
+         font-size: 18px;
+         font-weight: 300;
+         line-height: 20.75px;
+         text-align: left;
+         background: linear-gradient(90deg, #141414 0%, #4c4c4c 100%);
+         color: transparent;
+         background-clip: text;
+      }
+   }
+   @media (max-width: $tablet) {
+      &__list {
+         padding: 0;
+         padding-top: 150px;
+      }
+      &__image {
+         height: 500px;
+         left: -200px;
+         top: -100px;
+      }
+   }
+   @media (max-width: $mobile) {
+      &__list {
+         grid-template-columns: 1fr;
+         li {
+            h4 {
+               font-size: 18px;
+            }
+            p {
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}
