@@ -2803,6 +2803,7 @@ footer button[type=submit]:hover {
   left: -400px;
   position: absolute;
   pointer-events: none;
+  z-index: -1;
 }
 
 .why-section__image img {
@@ -2856,7 +2857,7 @@ footer button[type=submit]:hover {
 }
 
 .why-section__content {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
 }
 
 .why-section__content h4 {
@@ -2885,6 +2886,97 @@ footer button[type=submit]:hover {
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.youtube-section__title {
+  margin-bottom: 35px;
+}
+
+.youtube-section__main .swiper-slide iframe {
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(219, 55, 39, 0.25);
+          box-shadow: 0px 6px 20px 0px rgba(219, 55, 39, 0.25);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 5px solid white;
+  overflow: hidden;
+  height: 406px;
+}
+
+.youtube-section__footer {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 13px;
+  text-align: center;
+}
+
+.youtube-section__footer p {
+  text-transform: uppercase;
+  font-family: "Intro Black Caps", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+}
+
+.youtube-section__footer p span {
+  color: #db3727;
+}
+
+.youtube-section__btn {
+  width: 230px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(219, 55, 39, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(219, 55, 39, 0.25);
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-39.56%, #fdfbfb), to(#ebedee));
+  background: -o-linear-gradient(bottom, #fdfbfb -39.56%, #ebedee 100%);
+  background: linear-gradient(360deg, #fdfbfb -39.56%, #ebedee 100%);
+}
+
+.youtube-section__btn span {
+  background: -webkit-gradient(linear, left top, right top, from(#141414), to(#4c4c4c));
+  background: -o-linear-gradient(left, #141414 0%, #4c4c4c 100%);
+  background: linear-gradient(90deg, #141414 0%, #4c4c4c 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.youtube-section__btn::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 32px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  background: url(../img/youtube-icon.svg) center/cover no-repeat;
 }
 
 @media screen and (max-width: 1219.98px) {
@@ -3249,6 +3341,32 @@ footer button[type=submit]:hover {
     height: 500px;
     left: -200px;
     top: -100px;
+  }
+
+  .youtube-section__title {
+    margin-bottom: 20px;
+  }
+
+  .youtube-section__main .swiper-slide iframe {
+    height: 48vw;
+  }
+
+  .youtube-section__footer p {
+    font-size: 18px;
+  }
+
+  .youtube-section__btn {
+    font-size: 15px;
+    width: 190px;
+    height: 43px;
+  }
+
+  .youtube-section__btn::after {
+    width: 22px;
+    height: 29px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22px;
+            flex: 0 0 22px;
   }
 }
 
